@@ -30,7 +30,8 @@ enum LocaleType {
   si,
   no,
   sq,
-  sv
+  sv,
+  lao
 }
 
 final _i18nModel = {
@@ -1134,6 +1135,43 @@ final _i18nModel = {
     'day': ['Mån', 'Tis', 'Ons', 'Tor', 'Fre', 'Lör', 'Sön'],
     'am': 'AM',
     'pm': 'PM'
+  },
+  "lao": {
+    //lao
+    'cancel': 'ຍົກເລີກ',
+    'done': 'ຕົກລົງ',
+    'today': 'ມື້​ນີ້',
+    'monthShort': [
+      'ม.ค',
+      'ก.พ',
+      'มี.ค',
+      'เม.ย',
+      'พ.ค',
+      'มิ.ย',
+      'ก.ค',
+      'ส.ค',
+      'ก.ย',
+      'ต.ค',
+      'พ.ย',
+      'ธ.ค'
+    ],
+    'monthLong': [
+      'ມັງກອນ',
+      'ກຸມພາ',
+      'ມີນາ',
+      'ເມສາ',
+      'ພຶດສະພາ',
+      'ມິຖຸນາ',
+      'ກໍລະກົດ',
+      'ສິງຫາ',
+      'ກັນຍາ',
+      'ຕຸລາ',
+      'ພະຈິກ',
+      'ທັນວາ'
+    ],
+    'day': ['จ.', 'อ.', 'พ.', 'พฤ.', 'ศ.', 'ส.', 'อา.'],
+    'am': 'AM',
+    'pm': 'PM'
   }
 };
 //get international object
@@ -1201,6 +1239,8 @@ Map<String, dynamic> i18nObjInLocale(LocaleType type) {
       return _i18nModel['sq'];
     case LocaleType.sv:
       return _i18nModel['sv'];
+    case LocaleType.lao:
+      return _i18nModel['lao'];
     default:
       return _i18nModel['en'];
   }
